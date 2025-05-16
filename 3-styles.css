@@ -1,13 +1,14 @@
-    :root {
+  
+:root {
     --color-white: #fff;
     --color-red: #FF6565;
     --font-small: 12px;
     --font-medium: 16px;
     --font-large: 32px;
     --font: 'Source Sans Pro', 'Lato', sans-serif;
-    }
-
-    header {
+  }
+  
+  header {
     width: 100%;
     background-image: url("images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
@@ -15,63 +16,62 @@
     position: relative;
     color: var(--color-white);
 
-    }
+  }
 
-    header .header {
+  header .header {
     justify-content: space-between;
     align-content: space-between;
     padding: 2rem;
     flex-wrap: wrap;
-    }
+  }
 
-    header .header nav {
+  header .header nav {
     width: 100%;
     display: flex;
     position: relative;
     justify-content: space-between;
     align-content: space-between;
+    
+  }
 
-    }
-
-    .header {
+ .header {
     max-width: 1000px;
     display: flex;
     justify-content: center;
     margin: auto;
     position: relative;
-    }
+  }
 
-    .header-content p {
+  .header-content p {
     margin: 2rem 0;
     line-height: 1.5;
     font-size: var(--font-medium);
-    }
+  }
 
-    @media (max-width: 1200px) {
+  @media (max-width: 1200px) {
     header {
-        background-position: 42% 50%;
+      background-position: 42% 50%;
     }
-    }
+  }
 
-
-    a {
+  a {
     text-decoration: none;
     color: var(--color-white);
     transition: color 0.1s ease;
-    }
-
-    a:hover, a:active {
+  }
+  
+  a:hover, a:active {
     color: var(--color-red);
-    }
-
-    .button {
+  }
+  
+  .button {
     font-family: var(--font);
     font-size: 14px;
     background: var(--color-red);
     color: white;
     border: none;
     padding: 1rem 2rem;
-
+    
     font-weight: 700;
     border-radius: 24px;
     margin: 1rem auto;
@@ -79,29 +79,28 @@
     box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
     opacity: 1;
     transition: opacity 0.2s ease;
-    }
-
-    .button:hover, .button:active {
+  }
+  
+  .button:hover, .button:active {
     opacity: 0.9;
-    }
+  }
 
-    .logo {
+  .logo {
     width: 161px;
     height: auto;
-    }
-
-
-    #menu-toggle {
+  }
+  
+  #menu-toggle {
     display: none;
     position: absolute;
-    }
-
-    #menu-btn {
+  }
+  
+  #menu-btn {
     display: none;
     position: absolute;
-    }
-
-    .header-nav {
+  }
+   
+  .header-nav {
     display: inline-flex;
     margin: auto 0;
     padding: 0;
@@ -109,36 +108,36 @@
     font-size: var(--font-small);
     font-weight: 700;
     font-family: var(--font);
-    }
-
-    .header-nav li {
+  }
+  
+  .header-nav li {
     margin: auto 1.25rem;
-    }
-
-    .header-content {
+  }
+  
+  .header-content {
     width: 75%;
     text-align: center;
     font-family: var(--font);
     margin: 20rem auto 0 auto;
-    }
-
-    .title {
+  }
+  
+  .title {
     font-size: var(--font-large);
     position: relative;
     font-weight: 700;
-    }
-
-    .title::after {
+  }
+  
+  .title::after {
     content: "Lorem ipsum dolor set amet lorem ipsum";
     display: block;
     font-size: var(--font-medium);
     position: relative;
     margin: 0.25rem 0;
-    }
-
-    @media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     header {
-      background-position: 44% 50%;
+      background-position: 44% 50%; 
     }
   
     header .header nav {
@@ -226,3 +225,174 @@
   
    
   }
+
+  
+   main {
+    width: 100%;
+    position: relative;
+  }
+  
+  main p {
+    text-align: center;
+    width: 65%;
+    margin: 2rem auto;
+    line-height: 1.5;
+    font-size: var(--font-medium);
+    font-family: var(--font);
+   
+  }
+  
+  main .container {
+    padding: 4rem;
+    flex-wrap: wrap;
+  }
+  
+  main .grid {
+    width: 100%;
+    display: grid;
+    font-family: var(--font);
+    margin: 2rem 0;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+    text-align: center;
+   
+    
+  }
+  
+  main .grid .element {
+    margin: 0.5rem;
+    
+  }
+
+  main .grid .element p {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    padding: 0;
+    
+  }
+  
+  main .grid .element h2 {
+    font-family: var(--font);
+    font-size: var(--font-medium);
+   
+  }
+  
+
+
+  .holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+    color: var(--color-red);
+    font-size: 46px;
+  }
+  
+
+  .section-title {
+    width: 100%;
+    margin: auto;
+    font-family: var(--font);
+    font-size: var(--font-large);
+    font-weight: bold;
+    text-align: center;
+  }
+
+ 
+  @media (max-width: 480px) {
+    main .container {
+      padding: 4rem 2.5rem;
+    }
+    main p {
+      width: 100%;
+    }
+    main .grid {
+      grid-template-columns: 100%;
+      grid-template-rows: 25% 25% 25% 25%;
+    }
+  
+    main .grid .element p {
+      width: 70%;
+      margin: auto;
+    }
+  
+  }
+
+  #results {
+    color: white;
+    background-image: url("images/headphones_hero_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
+ 
+  #results .container {
+    padding: 6rem 4rem;
+  }
+  
+  #results .grid .element {
+    height: 10rem;
+    padding: 0;
+    position: relative;
+    background-image: url("images/pentagone.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+   
+  }
+  
+  #results .grid .element h2 {
+    position: relative;
+    top: 15%;
+    font-size: var(--font-large);
+
+  }
+  
+  #results .grid .element p {
+    position: relative;
+    top: 12%;
+  }
+
+  @media (max-width: 480px) {
+    #results {
+      background-position: 50%;
+    }
+  }
+
+   #formContact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    
+  }
+  
+  input {
+    width: 50%;
+    margin: 1rem 0;
+    height: 2rem;
+    color: black;
+    font-family: var(--font);
+    font-size: 14px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(7, 22, 41, 0.17);
+  }
+
+  input::placeholder {
+    color: black;
+    font-size: var(--font-medium);
+    font-weight: bold;
+  }
+
+  input:focus {
+    outline: none;
+  }
+
+  @media (max-width: 480px) {
+    input {
+      width: 90%;
+    }
+  }
+
+  
